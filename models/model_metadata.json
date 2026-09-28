@@ -1,0 +1,100 @@
+{
+  "project": "Analizador de Desaprobación Escolar",
+  "predictors": [
+    "Edad",
+    "TotalEstudiantes",
+    "Discapacidad",
+    "Venezolanos",
+    "Extranjeros",
+    "gestion",
+    "dsc_nivel"
+  ],
+  "numeric_columns": [
+    "Edad",
+    "TotalEstudiantes",
+    "Discapacidad",
+    "Venezolanos",
+    "Extranjeros"
+  ],
+  "categorical_columns": [
+    "gestion",
+    "dsc_nivel"
+  ],
+  "categories_2023": {
+    "gestion": [
+      "Privada",
+      "Pública de gestión directa",
+      "Pública de gestión privada"
+    ],
+    "dsc_nivel": [
+      "Inicial - Cuna",
+      "Inicial - Cuna-Jardín",
+      "Inicial - Jardín",
+      "Inicial no escolarizado",
+      "Primaria",
+      "Secundaria"
+    ]
+  },
+  "training_period": 2023,
+  "temporal_evaluation_period": 2024,
+  "training_rows_classification": 435867,
+  "training_rows_regression": 435867,
+  "evaluation_rows": 535137,
+  "classification_metrics_2024": {
+    "Accuracy": 0.8959668271863093,
+    "Precision": 0.7085927770859277,
+    "Recall": 0.3988482207897522,
+    "F1": 0.5104036584293378,
+    "ROC-AUC": 0.8898106247548218
+  },
+  "regression_metrics_2024": {
+    "MAE": 5.870379354445339,
+    "RMSE": 13.31672852952891,
+    "R2": 0.08544692473885473
+  },
+  "reference_metrics_notebook": {
+    "classification": {
+      "Accuracy": 0.896,
+      "Precision": 0.7086,
+      "Recall": 0.3988,
+      "F1": 0.5104,
+      "ROC-AUC": 0.8898
+    },
+    "regression": {
+      "MAE": 5.8704,
+      "RMSE": 13.3167,
+      "R2": 0.0854
+    }
+  },
+  "serialization_verified": true,
+  "feature_importance": [
+    {
+      "Variable": "TotalEstudiantes",
+      "Importancia": 0.40636938388861515
+    },
+    {
+      "Variable": "Edad",
+      "Importancia": 0.22628003913927688
+    },
+    {
+      "Variable": "dsc_nivel",
+      "Importancia": 0.12274729522417446
+    },
+    {
+      "Variable": "gestion",
+      "Importancia": 0.12265008505306198
+    },
+    {
+      "Variable": "Venezolanos",
+      "Importancia": 0.07869738343004481
+    },
+    {
+      "Variable": "Extranjeros",
+      "Importancia": 0.022804908424799167
+    },
+    {
+      "Variable": "Discapacidad",
+      "Importancia": 0.02045090484002775
+    }
+  ]
+}
